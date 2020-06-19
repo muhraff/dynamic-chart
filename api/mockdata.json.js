@@ -1,15 +1,26 @@
-// themeName : blue || grey = default || magenta || green || orange
-// primaryChartPosition: top = default || bottom
+// theme : blue || grey = default || magenta || green || orange
+// carouselPosition: top = default || bottom
+// carouselHeight: number | 30 = default
+// carousel: true | false
 // type : bar || line = default
 
 window.MOCK_DATA = {
   key: 'chart-component',
-  themeName: 'green',
-  primaryChartPosition: 'top',
+  settings: {
+    theme: 'blue',
+    carousel: true,
+    carouselPosition: 'bottom',
+    carouselHeight: 30,
+  },
   data: [
     {
       id: 'e101',
-      title: 'Signal Strength',
+      title: { text: 'Signal Strength', color: '' },
+      subTitle: {
+        text: '830.55 µs/cm',
+        color: '',
+      },
+      description: { text: '55.4%', color: 'red' },
       isPrimary: true,
       type: 'bar',
       labels: [
@@ -32,7 +43,12 @@ window.MOCK_DATA = {
     },
     {
       id: 'e102',
-      title: 'Solar Charge',
+      title: { text: 'Solar Charge', color: 'green' },
+      subTitle: {
+        text: '430.66 µs/cm',
+        color: 'blue',
+      },
+      description: { text: '55.4%', color: '' },
       isPrimary: false,
       type: 'line',
       labels: [
@@ -55,9 +71,14 @@ window.MOCK_DATA = {
     },
     {
       id: 'e103',
-      title: 'Battery Temperature',
+      title: { text: 'Battery Temperature', color: '' },
+      subTitle: {
+        text: '600.00 µs/cm',
+        color: '',
+      },
+      description: { text: '55.4%', color: '' },
       isPrimary: false,
-      type: 'line',
+      type: 'bar',
       labels: [
         '01/05',
         '02/05',
@@ -78,7 +99,12 @@ window.MOCK_DATA = {
     },
     {
       id: 'e104',
-      title: 'Temperature at Device',
+      title: { text: 'Temperature at Device', color: '' },
+      subTitle: {
+        text: '960 µs/cm',
+        color: '',
+      },
+      description: { text: '55.4%', color: '' },
       isPrimary: false,
       type: 'line',
       labels: [
@@ -101,7 +127,12 @@ window.MOCK_DATA = {
     },
     {
       id: 'e105',
-      title: 'Battery Capacity',
+      title: { text: 'Battery Capacity', color: '' },
+      subTitle: {
+        text: '260.88 µs/cm',
+        color: '',
+      },
+      description: { text: '55.4%', color: '' },
       isPrimary: false,
       type: 'line',
       labels: [
