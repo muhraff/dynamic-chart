@@ -6,7 +6,7 @@ https://muhraff.github.io/dynamic-chart/
 
 Mock data example
 
-`./api/mockdata.json.js`
+`./mockdata.json.js`
 
 ```js
 {
