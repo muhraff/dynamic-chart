@@ -1,3 +1,7 @@
+### Example
+
+https://muhraff.github.io/dynamic-chart/
+
 # Dynamic data chart.js example
 
 Mock data example
